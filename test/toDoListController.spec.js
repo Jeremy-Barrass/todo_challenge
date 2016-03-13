@@ -11,4 +11,16 @@ describe('ToDoListController', function(){
     expect(ctrl.newTask).toBeUndefined();
     expect(ctrl.taskList).toBeUndefined();
   });
+
+  describe('when adding a task to the list', function(){
+    var items = [
+      "Get newspaper",
+      "Finish coding challenge",
+      "Make dinner"
+    ];
+
+    it('displays tasks', function(){
+      expect(ctrl.taskList.items).toEqual(items);
+    });
+  });
 });
