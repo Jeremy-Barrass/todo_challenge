@@ -1,0 +1,32 @@
+{
+  "name": "todo_challenge",
+  "version": "1.0.0",
+  "description": "\"Makers Academy weekend challenge\"",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeremy-Barrass/todo_challenge.git"
+  },
+  "author": "Jeremy Barrass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeremy-Barrass/todo_challenge/issues"
+  },
+  "homepage": "https://github.com/Jeremy-Barrass/todo_challenge#readme",
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0"
+  },
+  "dependencies": {
+    "jasmine": "^2.4.1",
+    "phantomjs-prebuilt": "^2.1.5"
+  }
+}
