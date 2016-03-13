@@ -20,6 +20,7 @@ describe('ToDoListController', function(){
     ];
 
     it('displays tasks', function(){
+      ctrl.addTask();
       expect(ctrl.taskList.items).toEqual(items);
     });
   });
