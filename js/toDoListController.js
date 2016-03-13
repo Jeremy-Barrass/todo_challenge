@@ -6,4 +6,8 @@ toDoList.controller('ToDoListController', [function(){
     "Finish coding challenge",
     "Make dinner"
   ]};
+
+  self.addTask = function(){
+    console.log('Hello world!')
+  };
 }]);
