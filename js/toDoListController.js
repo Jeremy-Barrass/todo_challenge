@@ -1,11 +1,9 @@
 toDoList.controller('ToDoListController', [function(){
   var self = this;
 
+  self.taskList = [];
+
   self.addTask = function(){
-    self.taskList = { "items": [
-      "Get newspaper",
-      "Finish coding challenge",
-      "Make dinner"
-    ]};
+    self.taskList.push(self.newTask)
   };
 }]);

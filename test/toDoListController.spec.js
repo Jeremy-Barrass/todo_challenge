@@ -9,19 +9,15 @@ describe('ToDoListController', function(){
 
   it('initialises with an empty task entry and an empty task list', function(){
     expect(ctrl.newTask).toBeUndefined();
-    expect(ctrl.taskList).toBeUndefined();
+    expect(ctrl.taskList).toEqual([]);
   });
 
   describe('when adding a task to the list', function(){
-    var items = [
-      "Get newspaper",
-      "Finish coding challenge",
-      "Make dinner"
-    ];
 
     it('displays tasks', function(){
+      ctrl.newTask = 'Get newspaper';
       ctrl.addTask();
-      expect(ctrl.taskList.items).toEqual(items);
+      expect(ctrl.taskList).toEqual(['Get newspaper']);
     });
   });
 });

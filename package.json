@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "jasmine": "^2.4.1",
-    "phantomjs-prebuilt": "^2.1.5"
+    "phantomjs-prebuilt": "^2.1.5",
+    "protractor": "^3.1.1"
   }
 }

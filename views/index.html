@@ -14,11 +14,11 @@
   <body ng-controller="ToDoListController as listCtrl">
     <section class="todo-list">
       <form class="task-entry">
-        <input type="text">
+        <input type="text" ng-model="listCtrl.newTask">
         <button class="add" ng-click="listCtrl.addTask()">Add</button>
       </form>
       <ul class="task-list">
-        <li class="task-item" ng-repeat="task in listCtrl.taskList.items">{{task}}</li>
+        <li class="task-item" ng-repeat="task in listCtrl.taskList">{{task}}</li>
       </ul>
     </section>
   </body>
