@@ -20,4 +20,12 @@ describe('ToDoListController', function(){
       expect(ctrl.taskList).toEqual(['Get newspaper']);
     });
   });
+
+  describe('changing a task', function(){
+    ctrl.newTask = 'Make soup';
+    ctrl.addTask();
+    ctrl.newTask = 'Knit jumper';
+    ctrl.changeTask();
+    expect(ctrl.taskList).toEqual(['Knit jumper'])
+  });
 });
